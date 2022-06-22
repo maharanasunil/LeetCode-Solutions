@@ -1,11 +1,8 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        freq = {}
-        for i in nums:
-            if i not in freq:
-                freq[i] = 1
-            else:
-                freq[i] += 1
-        for i in freq:
-            if freq[i] == 1:
-                return i
+        dict = {}
+        for num in nums:
+            dict[num] = dict.get(num, 0) + 1
+        for key, value in dict.items():
+            if value == 1:
+                return key
