@@ -15,7 +15,7 @@ class Solution:
             i += 1
         return ans
                 
-    
+
     
     def twoSum(self, nums, start, end, target):
         f = start
