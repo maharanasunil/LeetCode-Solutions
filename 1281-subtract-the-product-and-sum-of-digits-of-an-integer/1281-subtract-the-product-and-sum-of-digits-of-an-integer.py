@@ -6,4 +6,4 @@ class Solution:
             num = int(i)
             sums += num
             product *= num
-        return product-sums
+        return product - sums
