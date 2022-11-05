@@ -1,3 +1,4 @@
+import random
 class Solution:
 
 	def __init__(self, head: Optional[ListNode]): 
